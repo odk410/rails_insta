@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsInsta</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!--http://localhost:3000/rails/info/routes 에서 URL Helper를 가져와 URL에 넣을 수 있다.  -->
+<%= link_to "Instagram",root_path%>
+<%= link_to "로그인","/users/login"%>
+<%= link_to "로그아웃","/users/logout"%>
+<%= link_to "회원가입","/users/signup"%>
+
+<%= yield %>
+
+</body>
+</html>
